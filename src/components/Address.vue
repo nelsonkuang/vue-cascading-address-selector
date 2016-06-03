@@ -48,7 +48,7 @@
     <li class="clearfix">
       <div class="fl a">具体地址</div>
       <div class="fl b">
-        <textarea id="address" name="address" class="text" placeholder="请填写具体地址" required=""></textarea>
+        <textarea id="address" name="address" class="text" v-model="addrs_in_detail" placeholder="请填写具体地址" required=""></textarea>
       </div>
     </li>
   </ul>
@@ -78,7 +78,8 @@ export default {
   props: {
     initprovselectedvalue: Number,
     initcityselectedvalue: Number,
-    initregionselectedvalue: Number
+    initregionselectedvalue: Number,
+    initaddrsindetail: String
   },
 
   data () {
@@ -88,7 +89,8 @@ export default {
       region_addrs: (this.initcityselectedvalue !== '0' && this.initcityselectedvalue !== 0) ? getAddrsArrayById(this.initcityselectedvalue) : [],
       prov_selected: this.initprovselectedvalue,
       city_selected: this.initcityselectedvalue,
-      region_selected: this.initregionselectedvalue
+      region_selected: this.initregionselectedvalue,
+      addrs_in_detail: this.initaddrsindetail
     }
   },
 
