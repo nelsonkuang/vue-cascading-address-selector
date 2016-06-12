@@ -108,7 +108,6 @@ export default {
     'city_selected': function (val, oldVal) {
       if (val !== oldVal) {
         if (val !== '0' && val !== 0) {
-          console.log(val)
           this.region_addrs = getAddrsArrayById(val)
         } else {
           this.region_addrs = []
