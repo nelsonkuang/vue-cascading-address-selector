@@ -1,7 +1,7 @@
 # vue-cascading-address-selector
 Vue级联地址选择器,纯前端实现现 地址数组的检索充分运用了以空间换时间的思路
 
-##使用方式
+## 使用方式
 ```
 git clone https://github.com/nelsonkuang/vue-cascading-address-selector.git
 cd vue-cascading-address-selector
